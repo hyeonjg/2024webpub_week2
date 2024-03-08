@@ -19,15 +19,17 @@
 			nav ol{
 				margin:auto; padding:0; width: 1000px; height: 30px;
 				margin-top:60px;
+				display: flex; gap:10px;
+				justify-content: center;
 				background-color: white;}
 			nav ol li{
 				list-style-type: none; 
-				text-align: center; line-height: 20px;
-				width: 180px; height: 20px; padding:9px;
-				float: left;
+				line-height: 20px;
+				height: 20px; padding:9px;
 			}
 			nav ol li a{
 				text-decoration: none; color:black;
+				display: inline-block;
 				background-color: lightyellow;
 			}
 			nav ol li a:hover{background-color: orange;}
@@ -51,7 +53,7 @@
 			}
 
 			section .row ol{
-				padding-left: 40%; text-align: left;
+				padding-left: 30%; text-align: left;
 				font-size:1em;
 			}
 
@@ -61,7 +63,7 @@
 				text-decoration: none; color:black;
 				background-color: lightyellow;}
 
-			.row{margin: 80px; flex-basis: 100%;}
+			.row{width:1000px; margin: auto; padding:40px;}
 			.cookingimg{
 				width: 200px; height: 200px; padding: 20px; 
 				display: block; margin:auto;}
@@ -69,11 +71,12 @@
 				display: block; margin:auto; text-align: center;}
 			.lefttext{
 				text-align: left;
-				padding-left: 40%;
+				padding-left: 30%;
 			}
 			.bg-green{background-color: #E1F9AB}
 			.bg-orange{background-color: #FFBD81}
 			.p-final{padding-bottom: 20px;}
+			.w-box{height:80px;}
 		</style>
 	</head>
 
@@ -101,6 +104,8 @@
 				</li>
 			</ol>
 		</nav>
+
+		<div class="w-box"></div>
 		
 		<section class="bg-green" id="1">
 		<div class="row">
@@ -115,9 +120,11 @@
 				<li>젓가락으로 찔러서 들어가면 완성!</li>
 			</ol>
 			<p class="lefttext">후기: 냄비가 타서 엄마한테 혼났다.</p>
-			<p class="lefttext p-final">*TIP: 감자가 덜 익어서 물을 더 넣더라도 소금은 더 넣으면 안 된다.</p>
+			<p class="lefttext p-final">TIP: 감자가 덜 익어서 물을 더 넣더라도 소금은 더 넣으면 안 된다.</p>
 		</div>
 		</section>
+
+		<div class="w-box"></div>
 
 		<section class="bg-orange" id="2">
 		<div class="row">
@@ -135,6 +142,8 @@
 		</div>
 		</section>
 
+		<div class="w-box"></div>
+
 		<section class="bg-green" id="3">
 		<div class="row">
 			<h2>고추기름 볶음밥과 양파 튀김</h2>
@@ -150,9 +159,11 @@
 				<li>곁들여서 완성!</li>
 			</ol>
 			<p class="lefttext">후기: 맛있게 매웠고 양파 튀김이 바삭해서 좋았다.</p>
-			<p class="lefttext p-final">*TIP: 볶음밥은 갓 지은 밥이 아니라 식은 밥이나 데운 밥으로 만들어야 뭉치지 않고 잘 볶아진다.</p>
+			<p class="lefttext p-final">TIP: 볶음밥은 갓 지은 밥이 아니라 식은 밥이나 데운 밥으로 만들어야 뭉치지 않고 잘 볶아진다.</p>
 		</div>
 		</section>
+
+		<div class="w-box"></div>
 
 		<section class="bg-orange" id="4">
 		<div class="row">
@@ -168,9 +179,11 @@
 				<li>부글부글 끓은 카레와 템페를 예쁘게 접시에 올리면 완성!</li>
 			</ol>
 			<p class="lefttext">후기: 토마토가 적당히 새콤한 맛을 더해줘서 맛있었다.</p>
-			<p class="lefttext p-final">*TIP: 토마토에서 물이 많이 나오기 때문에 카레에 물을 넣을 필요가 없다.</p>
+			<p class="lefttext p-final">TIP: 토마토에서 물이 많이 나오기 때문에 카레에 물을 넣을 필요가 없다.</p>
 		</div>
 		</section>
+
+		<div class="w-box"></div>
 
 		<section class="bg-green" id="5">
 		<div class="row">
@@ -187,13 +200,15 @@
 				<li>손에 화상을 입지 않게 조심해서 꺼내면 완성!</li>
 			</ol>
 			<p class="lefttext">후기: 가지를 편식하는 나도 맛있게 먹을 수 있었다.</p>
-			<p class="lefttext p-final">*TIP: 가지가 기름을 잘 빨아들여서 기름은 조금만 뿌려도 된다.</p>
+			<p class="lefttext p-final">TIP: 가지가 기름을 잘 빨아들여서 기름은 조금만 뿌려도 된다.</p>
 		</div>
 		</section>
 
 		<footer>
-			<p>구현정이 만든 실습용 웹페이지입니다.</p>
-			<a href="#0">처음으로</a>
+			<div class="row">
+				<a href="#0">처음으로</a>
+				<p>구현정이 만든 실습용 웹페이지입니다. 2024&copy;구현정</p>
+			</div>
 		</footer>
 	</body>
 </html>
